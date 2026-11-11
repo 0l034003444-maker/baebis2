@@ -5,6 +5,8 @@ import os
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
+st.set_page_config(page_title="배비스", page_icon="icon.png", layout="wide")
+
 # 1. 배비스 전용 고급 네온 앱 아이콘 생성 (SVG 데이터)
 BAEBIS_ICON = """data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23FF2E55"/><stop offset="100%" stop-color="%230055FF"/></linearGradient></defs><rect width="512" height="512" rx="115" fill="%230B0B12"/><rect x="16" y="16" width="480" height="480" rx="100" fill="none" stroke="url(%23g)" stroke-width="20"/><circle cx="256" cy="210" r="85" fill="none" stroke="%23FF2E55" stroke-width="16"/><text x="256" y="238" font-size="85" text-anchor="middle" fill="%23FFFFFF">🎙️</text><text x="256" y="400" font-size="85" font-family="sans-serif" font-weight="900" text-anchor="middle" fill="%23FFD000">배비스</text></svg>"""
 
